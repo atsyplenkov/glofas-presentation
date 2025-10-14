@@ -1,0 +1,12 @@
+file: anadyr_classes.parquet
+file_size: 1739
+pin_hash: e1c4246e19449749
+type: parquet
+title: Anadyr River Annual Runoff Classes
+description: Annual runoff volume (in km3) ranged and empirical probability estimated
+  (Pm, %). Then years were classified into low (<33.3%), normal (33.3%-66.7%) and
+  high classes.
+tags: ~
+urls: ~
+created: 20250626T042447Z
+api_version: 1

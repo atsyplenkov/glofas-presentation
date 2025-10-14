@@ -34,6 +34,15 @@ execute:
   fig-align: center
 ---
 
+```{r}
+#| label: setup
+#| include: false
+#| cache: false
+
+source("src/plot-1.R")
+
+```
+
 ## What does a boa constrictor that has eaten an elephant look like? {background-image="assets/boa-anadyr-1.png" background-size="cover" background-position="center"}
 
 <!-- TODO: Add timer -->
@@ -122,16 +131,16 @@ Median $KGE'$ for Chukotka and Kamchatka rivers — <b class="simple-highlight-3
 <span style='font-size:50%; color:grey;'>We are not affiliated with the ECMWF</span>
 
 # Is it really that good?<br><br>👀{background-color="#212121" transiton="zoom"}
-<!-- 
+
 ##
 
 ```{r}
-#| label: emissions-plot
+#| label: glofas-plot
 #| echo: false
 #| fig-align: center
 
 ggiraph::girafe(
-  ggobj = emissions_plot,
+  ggobj = glofas_plot,
   width_svg = 8,
   height_svg = 6,
   options = list(
@@ -145,4 +154,4 @@ ggiraph::girafe(
   )
 )
 
-``` -->
+```
