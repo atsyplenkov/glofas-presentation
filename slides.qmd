@@ -7,6 +7,7 @@ title-slide-attributes:
     data-background-size: cover
 format:
   revealjs:
+    math: katex
     theme: src/slides.scss
     footer: ''
     menu: false
