@@ -56,6 +56,17 @@ No streamflow measurements on the state gauging station network in the last 30 y
 :::
 
 <!-- TODO: Add zoomable map -->
+<!-- TODO: мем про Тинькова -->
+
+<span style='font-size:50%; color:grey;'>¹no streamflow gages since 1996</span>
+
+## Anadyr River is the largest ungauged¹ Russian River
+
+::: {.callout-note title = "Nota bene"}
+**No streamflow measurements** on the state gauging station network in the last 30 years!
+:::
+
+![](assets/nothing.gif){fig-align="center"}
 
 <span style='font-size:50%; color:grey;'>¹no streamflow gages since 1996</span>
 
@@ -116,7 +127,7 @@ No streamflow measurements on the state gauging station network in the last 30 y
 
 ## GloFAS-ERA5 calibration
 
-Nearly `2,500` gauging stations used for calibration in `v4.0`. Global median $KGE'$ is <b class="simple-highlight-1">0.7</b>
+Nearly `2,500` gauging stations used for calibration in `v4.0`. Global median `KGE'` is <b class="simple-highlight-1">0.7</b>
 
 ![](assets/glofas-map-1.png){width=80% fig-align="center"}
 
@@ -124,7 +135,7 @@ Nearly `2,500` gauging stations used for calibration in `v4.0`. Global median $K
 
 ## GloFAS-ERA5 calibration
 
-Median $KGE'$ for Chukotka and Kamchatka rivers — <b class="simple-highlight-3">0.9-1.0</b>
+Median `KGE'` for Chukotka and Kamchatka rivers — <b class="simple-highlight-3">0.9-1.0</b>
 
 ![](assets/glofas-map-2.png){width=80% fig-align="center"}
 
@@ -155,3 +166,21 @@ ggiraph::girafe(
 )
 
 ```
+
+# KGE' = 0.4 {background-color="#212121" transiton="zoom"}
+
+<center>
+*«Doubtful, but okay...»*©
+</center>
+
+![](assets/doubt.gif){fig-align="center"}
+
+## Bias-corrected hydrograph
+
+## Empricial Quantile Mapping (EQM)
+
+## How to choose optimal number of quantiles?
+Cross-validation strategy
+
+## Cross-validation results
+

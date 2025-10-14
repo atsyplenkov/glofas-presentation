@@ -6,6 +6,7 @@ library(purrr)
 library(glue)
 library(ggplot2)
 library(ggiraph)
+library(tidyhydro)
 
 plot_co_pal <- list(
   "obs" = "#000000",
@@ -36,11 +37,13 @@ anadyr_all <-
     by = dplyr::join_by(id, year, date)
   ) |>
   dplyr::filter(!is.na(raw)) |>
-  dplyr::filter(lubridate::month(date) %in% c(5:9))
+  dplyr::filter(lubridate::month(date) %in% c(5:9)) |> 
+  filter(id == 1496, year == 1989)
+
+tidyhydro::kge2012(anadyr_all, obs, raw)
 
 anadyr <-
   anadyr_all |>
-  filter(id == 1496, year == 1990) |>
   mutate(date = lubridate::as_datetime(date, tz = "UTC")) |>
   tidyr::complete(date = seq.POSIXt(min(date), max(date), by = "1 hour")) |>
   mutate(
@@ -61,7 +64,7 @@ anadyr <-
               <span style='display: inline-block; width: 10px; height: 10px; background-color: {plot_co_pal$obs}; margin-right: 6px; vertical-align: middle;'></span>Observed
             </td>
             <td style='text-align: right; padding: 2px 4px; border: none; font-family: Roboto Mono'>
-              {format(round(obs, 1), nsmall = 0)}
+              {format(round(obs))}
             </td>
           </tr>
           <tr>
@@ -69,7 +72,7 @@ anadyr <-
               <span style='display: inline-block; width: 10px; height: 10px; background-color: {plot_co_pal$raw}; margin-right: 6px; vertical-align: middle;'></span>GloFAS
             </td>
             <td style='text-align: right; padding: 2px 4px; border: none; font-family: Roboto Mono'>
-              {format(round(raw, 1), nsmall = 0)}
+              {format(round(raw))}
             </td>
           </tr>
         </table>
@@ -129,7 +132,10 @@ glofas_plot <-
     labels = c("Observed", "GloFAS")
   ) +
   #labels
-  labs(title = "Anadyr — Novyy Eropol") +
+  labs(
+    title = "Anadyr — Novyy Eropol",
+    subtitle = 'Mean daily streamflow, m³/s'
+  ) +
   guides(
     color = guide_legend(override.aes = list(linewidth = 1))
   ) +
