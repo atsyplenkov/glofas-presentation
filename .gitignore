@@ -1,0 +1,5 @@
+/.quarto/
+**/*.quarto_ipynb
+/_freeze
+/slides_files
+/slides_cache

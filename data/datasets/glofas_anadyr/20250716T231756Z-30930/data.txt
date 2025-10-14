@@ -1,0 +1,12 @@
+file: glofas_anadyr.qs
+file_size: 31150
+pin_hash: 3093083b18f29f08
+type: qs
+title: CEMS GloFAS historical for the Anadyr River basin 2008-2022
+description: River discharge in the last 24 hours (in m3/s) from the LISFLOOD v4.0
+  model downloaded from CEMS Early Warning Data Store [https://ewds.climate.copernicus.eu/datasets/cems-glofas-historical?tab=documentation]
+  for the Anadyr River basin. Temporal coverage — 1979-1996 Timezone — Asia/Kamchatka
+tags: ~
+urls: ~
+created: 20250716T231756Z
+api_version: 1
