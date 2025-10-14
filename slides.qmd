@@ -85,9 +85,37 @@ No streamflow measurements on the state gauging station network in the last 30 y
 :::: {.column width="60%" align='right'}
 ![](assets/iahs_pub.jpeg){width=40% fig-align="center"}
 
-<div style="font-size:70%; text-align:center;"><b>We are late with this presentation because IAHS PUB Decade was in 2003–2012</b></div>
+<div style="font-size:70%; text-align:center;"><b>We are probably late with this presentation for 10 years because IAHS PUB Decade was in 2003–2012...</b></div>
 
 ::::
 ::::::::
 
-<span style='font-size:50%; color:grey;'>¹no streamflow gages since 1996</span>
+<span style='font-size:50%; color:grey;'>¹no streamflow gages since 1996</span> 
+
+## GloFAS-ERA5 quick overview
+
+::: incremental
+* Current version `GloFAS-ERA5 v4.0` (June 2025 release)
+
+* Global hydrological models `HTESSEL¹` and `LISFLOOD` v4.1.3
+
+* Daily discharge in (`m³/s`) at 0.05° spatial res (≈5 km)
+:::
+
+<span style='font-size:50%; color:grey;'>¹Hydrology Tiled ECMWF Scheme for Surface Exchanges over Land</span> 
+
+## GloFAS-ERA5 calibration
+
+Nearly 2500 gauging stations used for calibration in `v4.0`. Global median $KGE'$ is <b class="simple-highlight-1">0.7</b>
+
+![](assets/glofas-map-1.png){width=80% fig-align="center"}
+
+<span style='font-size:50%; color:grey;'>We are not affiliated with the ECMWF</span> 
+
+## GloFAS-ERA5 calibration
+
+Median $KGE'$ for Chukotka and Kamchatka rivers — <b class="simple-highlight-3">0.9-1.0</b>
+
+![](assets/glofas-map-2.png){width=80% fig-align="center"}
+
+<span style='font-size:50%; color:grey;'>We are not affiliated with the ECMWF</span> 
