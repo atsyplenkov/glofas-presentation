@@ -1,0 +1,11 @@
+file: anadyr_obs.qs
+file_size: 80662
+pin_hash: cdbdddda9c928230
+type: qs
+title: Water discharge data (in m3/s) from yearbooks for 7 gauging stations in Anadyr
+  River basin. Temporal coverage 1958-1996.
+description: ~
+tags: ~
+urls: ~
+created: 20250720T020111Z
+api_version: 1
