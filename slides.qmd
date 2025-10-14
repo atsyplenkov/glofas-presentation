@@ -46,6 +46,8 @@ execute:
 No streamflow measurements on the state gauging station network in the last 30 years!
 :::
 
+<!-- TODO: Add zoomable map -->
+
 <span style='font-size:50%; color:grey;'>¹no streamflow gages since 1996</span>
 
 ## Anadyr River is the largest ungauged¹ Russian River
@@ -58,7 +60,6 @@ No streamflow measurements on the state gauging station network in the last 30 y
 {{<iconify mdi:question-mark-box>}} How can we predict streamflow?
 
 {{<iconify mdi:question-mark-box>}} How accurate are our predictions?
-
 
 ::::
 
@@ -79,7 +80,6 @@ No streamflow measurements on the state gauging station network in the last 30 y
 {{<iconify mdi:question-mark-box>}} How can we predict streamflow?
 
 {{<iconify mdi:question-mark-box>}} How accurate are our predictions?
-
 
 ::::
 
@@ -107,7 +107,7 @@ No streamflow measurements on the state gauging station network in the last 30 y
 
 ## GloFAS-ERA5 calibration
 
-Nearly 2500 gauging stations used for calibration in `v4.0`. Global median $KGE'$ is <b class="simple-highlight-1">0.7</b>
+Nearly `2,500` gauging stations used for calibration in `v4.0`. Global median $KGE'$ is <b class="simple-highlight-1">0.7</b>
 
 ![](assets/glofas-map-1.png){width=80% fig-align="center"}
 
@@ -119,4 +119,5 @@ Median $KGE'$ for Chukotka and Kamchatka rivers — <b class="simple-highlight-3
 
 ![](assets/glofas-map-2.png){width=80% fig-align="center"}
 
-<span style='font-size:50%; color:grey;'>We are not affiliated with the ECMWF</span> 
+<span style='font-size:50%; color:grey;'>We are not affiliated with the ECMWF</span>
+
