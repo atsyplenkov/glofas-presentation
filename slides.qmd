@@ -1,7 +1,7 @@
 ---
-title: 'Technical limitations and recommendations for streamflow predictions in data-scarce regions using GloFAS-ERA5 reanalysis data'
+title: "Technical limitations and recommendations for streamflow predictions in data-scarce regions using <span style='color:#ffffff;'>GloFAS-ERA5</span>  reanalysis data"
 subtitle: 'Anadyr River case study'
-author: "<span style='color:#ffffff;'>Anatoly Tsyplenkov & Danila Shkolny<br>Lomonosov Moscow State University</span>"
+author: "<span style='color:#ffffff;'>Anatoly Tsyplenkov & Danila Shkolny<br><span style='font-size:80%'>Lomonosov Moscow State University</span></span>"
 title-slide-attributes:
     data-background-image: assets/anadyr_overview_opacity.jpg
     data-background-size: cover
@@ -39,3 +39,55 @@ execute:
 
 ## What does a boa constrictor that has eaten an elephant look like? {background-image="assets/boa-anadyr-2.png" background-size="cover" background-position="center"}
 
+## Anadyr River is the largest ungauged¹ Russian River
+
+::: {.callout-note title = "Nota bene"}
+No streamflow measurements on the state gauging station network in the last 30 years!
+:::
+
+<span style='font-size:50%; color:grey;'>¹no streamflow gages since 1996</span>
+
+## Anadyr River is the largest ungauged¹ Russian River
+
+:::::::: {.columns}
+:::: {.column width="40%" align='left'}
+
+{{<iconify mdi:question-mark-box>}} What can we do?
+
+{{<iconify mdi:question-mark-box>}} How can we predict streamflow?
+
+{{<iconify mdi:question-mark-box>}} How accurate are our predictions?
+
+
+::::
+
+:::: {.column width="60%" align='right'}
+
+::::
+::::::::
+
+<span style='font-size:50%; color:grey;'>¹no streamflow gages since 1996</span>
+
+## Anadyr River is the largest ungauged¹ Russian River
+
+:::::::: {.columns}
+:::: {.column width="40%" align='left'}
+
+{{<iconify mdi:question-mark-box>}} What can we do?
+
+{{<iconify mdi:question-mark-box>}} How can we predict streamflow?
+
+{{<iconify mdi:question-mark-box>}} How accurate are our predictions?
+
+
+::::
+
+:::: {.column width="60%" align='right'}
+![](assets/iahs_pub.jpeg){width=40% fig-align="center"}
+
+<div style="font-size:70%; text-align:center;"><b>IAHS Decade 2003–2012</b></div>
+
+::::
+::::::::
+
+<span style='font-size:50%; color:grey;'>¹no streamflow gages since 1996</span>
