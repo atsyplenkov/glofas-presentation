@@ -1,0 +1,41 @@
+---
+title: 'Technical limitations and recommendations for streamflow predictions in data-scarce regions using GloFAS-ERA5 reanalysis data'
+subtitle: 'Anadyr River case study'
+author: "<span style='color:#ffffff;'>Anatoly Tsyplenkov & Danila Shkolny<br>Lomonosov Moscow State University</span>"
+title-slide-attributes:
+    data-background-image: assets/anadyr_overview_opacity.jpg
+    data-background-size: cover
+format:
+  revealjs:
+    theme: src/slides.scss
+    footer: ''
+    menu: false
+    transition: fade
+    progress: true
+    multiplex: false
+    preview-links: true
+    scrollable: false
+    hide-inactive-cursor: true
+    highlight-style: printing
+    pause: true
+editor: source
+knitr:
+  opts_chunk:
+    dev: "ragg_png"
+    retina: 1
+    dpi: 300
+execute:
+  freeze: auto
+  cache: true
+  echo: true
+  fig-width: 9
+  fig-height: 5.5
+  fig-align: center
+---
+
+## What does a boa constrictor that has eaten an elephant look like? {background-image="assets/boa-anadyr-1.png" background-size="cover" background-position="center"}
+
+<!-- TODO: Add timer -->
+
+## What does a boa constrictor that has eaten an elephant look like? {background-image="assets/boa-anadyr-2.png" background-size="cover" background-position="center"}
+
