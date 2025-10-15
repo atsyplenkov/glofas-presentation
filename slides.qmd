@@ -136,6 +136,9 @@ Median `KGE'` for Chukotka and Kamchatka rivers — <b class="simple-highlight-3
 
 <span style='font-size:50%; color:grey;'>We are not affiliated with the ECMWF</span>
 
+## GloFAS-ERA5 calibration
+![](assets/map_cv.png){fig-align="center"}
+
 # Is it really that good?<br><br>👀{background-color="#212121" transiton="zoom"}
 
 ## {#glofas-example}
@@ -162,7 +165,7 @@ ggiraph::girafe(
 
 ```
 
-# KGE' = 0.4 {background-color="#212121" transiton="zoom"}
+# KGE' = 0.53 {background-color="#212121" transiton="zoom"}
 
 <center>
 *«Doubtful, but okay...»*©
@@ -170,11 +173,58 @@ ggiraph::girafe(
 
 ![](assets/doubt.gif){fig-align="center"}
 
-## Bias-corrected hydrograph
-Interactive graph
+# Introducing ... bias-corrected hydrograph
 
-## Empricial Quantile Mapping (EQM)
-Theory
+## {#dqm-example}
+
+```{r}
+#| label: qmap-plot
+#| echo: false
+#| fig-align: center
+
+ggiraph::girafe(
+  ggobj = qmap_plot,
+  width_svg = 8,
+  height_svg = 6,
+  options = list(
+    ggiraph::opts_toolbar(saveaspng = FALSE),
+    ggiraph::opts_sizing(width = .9),
+    opts_tooltip(css = "font-family:Roboto"),
+    opts_hover(
+      css = "stroke-opacity:100%;fill-opacity:100%",
+      nearest_distance = NULL
+    )
+  )
+)
+
+```
+
+# KGE' = 0.86 {background-color="#212121" transiton="zoom"}
+
+![](assets/cool.gif){fig-align="center"}
+
+## Detrended Quantile Mapping (DQM)
+![](assets/density1.png){fig-align="center"}
+
+<span style='font-size:50%; color:grey;'>*Cannon et al., 2015*</span>
+
+## Detrended Quantile Mapping (DQM)
+![](assets/q1.png){fig-align="center"}
+
+## Detrended Quantile Mapping (DQM)
+![](assets/q2.png){fig-align="center"}
+
+## Detrended Quantile Mapping (DQM)
+![](assets/q3.png){fig-align="center"}
+
+## Detrended Quantile Mapping (DQM)
+![](assets/q4.png){fig-align="center"}
+
+## Detrended Quantile Mapping (DQM)
+![](assets/q5.png){fig-align="center"}
+
+## Detrended Quantile Mapping (DQM)
+![](assets/q10.png){fig-align="center"}
 
 ## How to choose optimal number of quantiles?
 ![](assets/cv-scheme-0.png){fig-align="center"}
@@ -185,8 +235,11 @@ Theory
 ## How to choose optimal number of quantiles?
 ![](assets/cv-scheme-2.png){fig-align="center"}
 
-## Cross-validation results
-Show that DQM did better job
+## CV: Tanyurer–Tanyurer
+![](assets/cv_plot_1587.png){fig-align="center"}
+
+## CV: Mayn–Vaegi
+![](assets/cv_plot_1504.png){fig-align="center"}
 
 ## 2021–2024 ADCP measurements
 Comparision with recent measurements
@@ -203,4 +256,16 @@ Comparision with recent measurements
 
 # Take home message <br><br> 🏠 {background-color="#212121" transiton="zoom"}
 
-# Friends don't let friends use uncorrected reanalysis data {background-color="#212121" transiton="zoom"}
+# Friends don't let friends use *uncorrected* <br> reanalysis data {background-color="#212121" transition="zoom"}
+
+## Take home message v1.1
+
+::: incremental
+* `GloFAS-ERA5 v4.0` has potential for a bish-bash-bosh streamflow assessment
+
+* Bias correction is necessary for `GloFAS-ERA5`
+
+* Detrended Quantile Mapping can increase `GloFAS-ERA5` accuracy by 20–30%
+
+* DQM is sensitive to the number of quantiles and requires tuning.
+:::
