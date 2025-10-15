@@ -19,6 +19,7 @@ format:
     hide-inactive-cursor: true
     highlight-style: printing
     pause: true
+    print: true
 editor: source
 knitr:
   opts_chunk:
@@ -242,7 +243,7 @@ ggiraph::girafe(
 ![](assets/cv_plot_1504.png){fig-align="center"}
 
 ## 2021–2024 ADCP measurements
-Comparision with recent measurements
+![](assets/anadyr_adcp_glofas2.png){fig-align="center"}
 
 # If I haven't convinced you yet... {transiton="zoom"}
 
@@ -251,8 +252,12 @@ Comparision with recent measurements
 ##
 ![](assets/koryaki_hydrograph.png){fig-align="center"}
 
+<span style='font-size:50%; color:grey;'>Avacha River basin</span>
+
 ##
 ![](assets/koryaki_scatterplot.png){fig-align="center"}
+
+<span style='font-size:50%; color:grey;'>Avacha River basin</span>
 
 # Take home message <br><br> 🏠 {background-color="#212121" transiton="zoom"}
 
@@ -265,7 +270,27 @@ Comparision with recent measurements
 
 * Bias correction is necessary for `GloFAS-ERA5`
 
-* Detrended Quantile Mapping can increase `GloFAS-ERA5` accuracy by 20–30%
+* Detrended Quantile Mapping can increase `GloFAS-ERA5` accuracy by ≈20%
 
 * DQM is sensitive to the number of quantiles and requires tuning.
 :::
+
+## Take home message v1.2
+
+:::::::: {.columns}
+:::: {.column width="40%" align='left'}
+
+![](assets/qr-code.png){width=60% fig-align="center"}
+
+<div style="font-size:70%; text-align:center;">Follow me:</div>
+
+::::
+
+:::: {.column width="60%" align='right'}
+
+![](assets/logo.gif){width=40% fig-align="center"}
+
+<div style="font-size:70%; text-align:center;">Телеграм канал — <b>Типизированный R</b></div>
+
+::::
+::::::::
