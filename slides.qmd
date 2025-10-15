@@ -49,15 +49,11 @@ source("src/plot-1.R")
 
 ## What does a boa constrictor that has eaten an elephant look like? {background-image="assets/boa-anadyr-2.png" background-size="cover" background-position="center"}
 
-## Anadyr River is the largest ungauged¹ Russian River
+## Anadyr River is the largest ungauged Russian River
 
-::: {.callout-note title = "Nota bene"}
-No streamflow measurements on the state gauging station network in the last 30 years!
-:::
+![](assets/anadyr_map.jpg){fig-align="center"}
 
-<!-- TODO: Add zoomable map -->
-
-<span style='font-size:50%; color:grey;'>¹no streamflow gages since 1996</span>
+<span style='font-size:50%; color:grey;'>*Alexander & Windom, 1999*</span>
 
 ## Anadyr River is the largest ungauged¹ Russian River
 
@@ -181,7 +177,13 @@ Interactive graph
 Theory
 
 ## How to choose optimal number of quantiles?
-Cross-validation strategy
+![](assets/cv-scheme-0.png){fig-align="center"}
+
+## How to choose optimal number of quantiles?
+![](assets/cv-scheme-1.png){fig-align="center"}
+
+## How to choose optimal number of quantiles?
+![](assets/cv-scheme-2.png){fig-align="center"}
 
 ## Cross-validation results
 Show that DQM did better job
@@ -189,7 +191,16 @@ Show that DQM did better job
 ## 2021–2024 ADCP measurements
 Comparision with recent measurements
 
-## Avacha River example
-If I haven't conviced you yet. Let's take a look at the Avacha River example
+# If I haven't convinced you yet... {transiton="zoom"}
 
-# Take home message
+# Koryakskaya River example (Kamchatka) <br><br> 🌋 {background-color="#212121" transiton="zoom"}
+
+##
+![](assets/koryaki_hydrograph.png){fig-align="center"}
+
+##
+![](assets/koryaki_scatterplot.png){fig-align="center"}
+
+# Take home message <br><br> 🏠 {background-color="#212121" transiton="zoom"}
+
+# Friends don't let friends use uncorrected reanalysis data {background-color="#212121" transiton="zoom"}
